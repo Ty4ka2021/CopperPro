@@ -1,0 +1,51 @@
+.mainSlider {
+  background: url('../images/bg.jpg') no-repeat center;
+  height: 100vh;
+  background-size: cover;
+
+  color: $white;
+
+  &__inner {
+    max-width: 666px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  &__title {
+    font-size: 100px;
+    @extend %lighthaus;
+  }
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 50px 0;
+
+    background: linear-gradient(90deg,#ffffff, #ffffff1c);
+  }
+
+  &__text {
+    font-size: 50px;
+    @extend %mont-800;
+
+    max-width: 530px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__price {
+    @extend %mont-300;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__price-span {
+    padding-left: 110px;
+    @extend %mont-800;
+  }
+
+  &__btn {}
+}
